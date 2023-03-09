@@ -1,0 +1,45 @@
+.user {
+    padding: 8px;
+    display: flex;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 14%);
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+    border-radius: 4px;
+    height: 100px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user:nth-child(even) {
+    background: red;
+}
+
+.name {
+    display: flex;
+    gap: 4px;
+}
+
+.user-img {
+    border-radius: 100%;
+}
+
+@media (max-width: 710px) {
+    .user {
+        flex-direction: column;
+        font-size: 14px;
+        text-align: center;    
+        height: auto;
+        padding: 12px 0px;
+    }
+    .user-info {
+        align-items: center;
+    }
+    .name {
+        align-items: center;
+        text-align: center;
+    }
+}

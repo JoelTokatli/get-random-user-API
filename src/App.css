@@ -1,0 +1,52 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: #2e2e2e;
+  color: white;
+  display: flex;
+  flex-direction:  column;
+  gap: 8px;
+}
+
+.users-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 8px;
+  padding: 0px 30px 30px;
+  list-style: none;
+}
+
+.users-container:first-child {
+  background: red;
+}
+
+.loading {
+  font-size: 48px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.list-user:nth-child(even) {
+  
+  background: rgb(104, 104, 104);
+}
+
+.list-user:nth-child(odd) {
+  border-radius: 4px;
+  background: rgb(70, 70, 70);
+}
+
+@media (max-width: 1030px) {
+  .users-container {
+
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 683px) {
+  .users-container {
+    grid-template-columns: 1fr;
+  }
+}
